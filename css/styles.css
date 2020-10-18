@@ -1,0 +1,188 @@
+html,
+body {
+  margin: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f7f1e6;
+  /* background-image: url("../img/bg-plants.png");
+  background-position: bottom right;
+  background-repeat: no-repeat; */
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Corben', sans-serif;
+  color: #371a44;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+}
+
+.spacer{
+  width: 100%;
+  height: 2rem;
+}
+
+img{
+  max-width: 100%;
+}
+
+.bg-img{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  display: none;
+}
+
+/** Menu  **/
+header {
+  padding: 1rem;
+  position: fixed;
+  background-color: #f7f1e6;
+  width: 100%;
+  top: 0;
+}
+
+#logo{
+  font-family: 'Corben', sans-serif;
+  text-decoration: none;
+  color: #371a44;
+}
+
+#logo:visited{
+  color: #371a44;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  list-style-type: none;
+  height: 100%;
+  min-width: 40vw;
+  margin: 0;
+  padding: 1rem 0;
+  right: -100%;
+  top: 3rem;
+  background-color: #f7f1e6;
+  transition: right 0.3s ease-out;
+}
+
+nav ul>li {
+  margin: 1rem;
+}
+
+nav ul>li a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+}
+nav ul>li a:hover {
+  background-color: #371a44;
+  color: #f7f1e6;
+}
+
+.content-width {
+  max-width: 87.5rem;
+  margin: 0 2rem;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  /* This is better for small screens, once min() is better supported */
+  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
+  /* grid-gap: 1rem; */
+  /* This is the standardized property now, but has slightly less support */
+  /* gap: 1rem */
+  align-items: center;
+}
+
+.text {
+  align-self: start;
+}
+
+#menu-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media(min-width: 44rem) {
+  nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul>li {
+    margin: 0 1rem;
+  }
+  #menu-button {
+    display: none;
+  }
+  
+  .two-columns {
+    grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    background: none;
+  }
+  .two-columns>div{
+    padding: 0 2rem 0 0;
+  }
+
+  .text{
+    background-color: #f7f1e6dd;
+    border-radius: 8px;
+  }
+
+
+  .bg-img{
+    display: block;
+  }
+
+}
+
+
+@media(min-width: 87.5rem) {
+  .content-width {
+    margin: 5rem auto 0 auto;
+  }
+
+}
