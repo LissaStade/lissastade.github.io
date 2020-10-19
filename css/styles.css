@@ -7,6 +7,15 @@ html {
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #371a44;
+}
+
+a:visited{
+  color: #371a44;
+}
+
 body {
   font-family: 'Merriweather', serif;
   background-color: #f7f1e6;
@@ -114,6 +123,19 @@ nav ul>li a {
 nav ul>li a:hover {
   background-color: #371a44;
   color: #f7f1e6;
+}
+
+.credits{
+  color: #e9e3d7;
+  margin: 1rem 2rem;
+}
+
+.credits>a{
+  color: #e9e3d7;
+  font-weight: 700;
+}
+.credits>a{
+  color: #e9e3d7;
 }
 
 .content-width {
