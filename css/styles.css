@@ -128,6 +128,8 @@ nav ul>li a:hover {
 .credits{
   color: #e9e3d7;
   margin: 1rem 2rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .credits>a{
