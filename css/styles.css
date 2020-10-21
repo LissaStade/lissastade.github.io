@@ -5,6 +5,7 @@ body {
 
 html {
   width: 100%;
+  min-height: 100vh;
 }
 
 a{
@@ -19,14 +20,13 @@ a:visited{
 body {
   font-family: 'Merriweather', serif;
   background-color: #f7f1e6;
-  /* background-image: url("../img/bg-plants.png");
-  background-position: bottom right;
-  background-repeat: no-repeat; */
   color: #333;
   line-height: 1.5;
   font-size: 1rem;
   margin: 0 auto;
   width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 h1,
@@ -128,8 +128,8 @@ nav ul>li a:hover {
 .credits{
   color: #e9e3d7;
   margin: 1rem 2rem;
-  position: absolute;
   bottom: 0;
+  position: absolute;
 }
 
 .credits>a{
@@ -175,6 +175,7 @@ nav ul>li a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    min-width: 0;
   }
   nav ul>li {
     margin: 0 1rem;
