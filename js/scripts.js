@@ -1,7 +1,7 @@
 // Menu button transform
 
-let menu_box = document.getElementById("menu-links");
 function openMenu(){
+  let menu_box = document.getElementById("menu-links");
   if (menu_box.style.right == '0px'){
     menu_box.style.right = '-100%';
   } else {
